@@ -31,6 +31,7 @@ const Signup = () => {
         e.preventDefault(); // at the beginning of a submit function
         // make sure password and confirm password are equal
         // password length >= 8 characters
+        console.log('clicked')
         if (password === confirmPassword && password.length >= 8) {
             const newUser = { name, email, password };
             axios.post(`${REACT_APP_SERVER_URL}/users/register`, newUser)
