@@ -17,16 +17,15 @@ const Navbar = (props) => {
                         <li className="nav-item">
                             <NavLink className="nav-link"  to="/about">About</NavLink>
                         </li>
-
-                    {props.isAuth ?
+                    {props.isAuth ? 
                     <>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/profile">Profile</NavLink>
-                        </li>
+                        </li> 
                         <li className="nav-item">
                             <span onClick={props.handleLogout} className="nav-link logout-link">Logout</span>
                         </li>
-                    </> :
+                    </> : 
                     <>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/signup">Sign up</NavLink>
