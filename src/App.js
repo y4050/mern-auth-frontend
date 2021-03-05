@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <h1>MERN Authentication</h1>
-      <Signup />
+
     </div>
   );
 }
